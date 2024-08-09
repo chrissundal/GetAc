@@ -18,33 +18,202 @@
     <div class="card">
         <div class="header green" onclick="show1()"> Verktøy </div>
         <div id="dropTag1"></div>
-        <div class="innerCard"></div>
+            <div class="innerCard"></div>
     </div>
 
     <div class="card">
         <div class="header blue" onclick="show2()"> HTML </div>
         <div id="dropTag2"></div>
-        <div class="innerCard"></div>
+            <div class="innerCard"></div>
     </div>
 
     <div class="card">
         <div class="header red" onclick="show3()"> CSS </div>
         <div id="dropTag3"></div>
-        <div class="innerCard"></div>
+            <div class="innerCard"></div>
     </div>
 
     <div class="card">
         <div class="header yellow" onclick="show4()"> JavaScript </div>
         <div id="dropTag4"></div>
-        <div class="innerCard"></div>        
+            <div class="innerCard"></div>        
     </div>
 
     <div class="card">
-        <div class="header dark" onclick="show5()"> Hode, kropp og ben </div>
+        <div class="header dark" onclick="showHead1()"> Hode, kropp og ben </div>
         <div id="dropTag5"></div>
+        <div class="innerCard"></div>
     </div>
-    
+
     <script>
+
+        function showHead1(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+                <button onclick="showHead4()">
+                    ◀
+                </button>
+                <img src="IMG/head1.png" />
+                <button onclick="showHead2()">▶</button>
+            </div>
+            `;
+        }
+
+
+        function showHead2(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+            <button onclick="showHead1()">
+                ◀
+            </button>
+                <img src="IMG/head2.png" />
+                <button onclick="showHead3()">▶</button>
+                </div>
+            `;
+        }
+
+
+        function showHead3(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+            <button onclick="showHead2()">
+                ◀
+            </button>
+                <img src="IMG/head3.png" />
+                <button onclick="showHead4()">▶</button>
+                </div>
+            `;
+        }
+
+
+        function showHead4(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+            <button onclick="showHead3()">
+                ◀
+            </button>
+                <img src="IMG/head4.png" />
+                <button onclick="showHead1()">▶</button>
+                </div>
+            `;
+        }
+
+
+        function showBody1(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+            <button onclick="showBody4()">
+                ◀
+            </button>
+                <img src="IMG/body1.png" />
+                <button onclick="showBody2()">▶</button>
+                </div>
+            `;
+        }
+
+
+        function showBody2(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+            <button onclick="showBody1()">
+                ◀
+            </button>
+                <img src="IMG/body2.png" />
+                <button onclick="showBody3()">▶</button>
+                </div>
+            `;
+        }
+
+
+        function showBody3(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+            <button onclick="showBody2()">
+                ◀
+            </button>
+                <img src="IMG/body3.png" />
+                <button onclick="showBody4()">▶</button>
+                </div>
+            `;
+        }
+
+
+        function showBody4(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+            <button onclick="showBody3()">
+                ◀
+            </button>
+                <img src="IMG/body4.png" />
+                <button onclick="showBody1()">▶</button>
+                </div>
+            `;
+        }
+
+
+        function showLegs1(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+                <button onclick="showLegs4()">
+                    ◀
+                </button>
+                    <img src="IMG/legs1.png" />
+                    <button onclick="showLegs2()">▶</button>
+                    </div>    
+            `;
+        }
+
+
+        function showLegs2(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+            <button onclick="showLegs1()">
+                ◀
+            </button>
+                <img src="IMG/legs2.png" />
+                <button onclick="showLegs3()">▶</button>
+                </div>
+            `;
+        }
+
+
+        function showLegs3(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+            <button onclick="showLegs2()">
+                ◀
+            </button>
+                <img src="IMG/legs3.png" />
+                <button onclick="showLegs4()">▶</button>
+                </div>
+            `;
+        }
+
+
+        function showLegs4(){
+
+            document.getElementById('dropTag5').innerHTML = /*HTML*/`
+            <div>
+            <button onclick="showLegs3()">
+                ◀
+            </button>
+                <img src="IMG/legs4.png" />
+                <button onclick="showLegs1()">▶</button>
+                </div>
+            `;
+        }
+
         function show1(){
             blankAll();
             document.getElementById('dropTag1').innerHTML= /*HTML*/`
@@ -134,37 +303,35 @@
                         
                         `;
                     }
-                    function show5(){
-                        blankAll();
-                        document.getElementById('dropTag5').innerHTML= /*HTML*/`
+                    // function show5(){
+                    //     blankAll();
+                    //     document.getElementById('dropTag5').innerHTML= /*HTML*/`
                         
-                        <div>
-                            <div>
-                                <button>◀</button>
-                                <img src="IMG/head1.png" />
-                                <button>▶</button>
-                            </div>
-                            <div>
-                                <button>◀</button>
-                                <img src="IMG/body1.png" />
-                                <button>▶</button>
-                            </div>
-                            <div>
-                                <button>◀</button>
-                                <img src="IMG/legs1.png" />
-                                <button>▶</button>
-                            </div>
-                        </div>
-            
-                        `;
-                    }
+                    //     <div>
+                    //         <div>
+                    //             <button>◀</button>
+                    //             <img src="IMG/head1.png" />
+                    //             <button>▶</button>
+                    //         </div>
+                    //         <div>
+                    //             <button>◀</button>
+                    //             <img src="IMG/body1.png" />
+                    //             <button>▶</button>
+                    //         </div>
+                    //         <div>
+                    //             <button>◀</button>
+                    //             <img src="IMG/legs1.png" />
+                    //             <button>▶</button>
+                    //         </div>
+                    //     </div>
+                    //     `;
+                    // }
                     function blankAll(){
                         document.getElementById('dropTag1').innerHTML= '';
                         document.getElementById('dropTag2').innerHTML= '';
                         document.getElementById('dropTag3').innerHTML= '';
                         document.getElementById('dropTag4').innerHTML= '';
                         document.getElementById('dropTag5').innerHTML= '';
-
                     }
                     </script>
 </body>
