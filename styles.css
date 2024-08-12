@@ -13,6 +13,7 @@ body {
     padding: 0px;
 
 }
+
 .header {
     color: white;
     text-align: center;
@@ -64,4 +65,23 @@ p {
 #dropTag7 {
     display: flex;
     justify-content: center;
+}
+
+.layout1 {
+    display: none
+}
+
+.layout2 {
+    display:inline;
+}
+
+.layout3 {
+    display: flex;
+    align-items: start;
+}
+
+.layout4 {
+    display: grid;
+    grid-template-columns: auto auto;
+
 }

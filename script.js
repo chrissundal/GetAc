@@ -274,3 +274,22 @@ function blankAll() {
     document.getElementById('dropTag7').innerHTML = ``;
 
 }
+
+function layout1() {
+
+
+    document.getElementById('container').classList = [];
+    document.getElementById('container').classList.add('layout1');
+}
+function layout2() {
+    document.getElementById('container').classList = [];
+    document.getElementById('container').classList.add('layout2');
+}
+function layout3() {
+    document.getElementById('container').classList = [];
+    document.getElementById('container').classList.add('layout3');
+}
+function layout4() {
+    document.getElementById('container').classList = [];
+    document.getElementById('container').classList.add('layout4');
+}

@@ -9,42 +9,45 @@
 </head>
 
 <body>
-    <button>ingen layout</button>
-    <button>vertikal layout</button>
-    <button>Horisontal layout</button>
-    <button>Grid layout</button>
+    <button onclick="layout1()">ingen layout</button>
+    <button onclick="layout2()">vertikal layout</button>
+    <button onclick="layout3()">Horisontal layout</button>
+    <button onclick="layout4()">Grid layout</button>
 
     <h1>Eksempel 1</h1>
-    <div class="card">
-        <div class="header green" onclick="show1()"> Verktøy </div>
-        <div id="dropTag1"></div>
-        <div class="innerCard"></div>
-    </div>
+    <div id="container">
 
-    <div class="card">
-        <div class="header blue" onclick="show2()"> HTML </div>
-        <div id="dropTag2"></div>
-        <div class="innerCard"></div>
-    </div>
+        <div class="card">
+            <div class="header green" onclick="show1()"> Verktøy </div>
+            <div id="dropTag1"></div>
+            <div class="innerCard"></div>
+        </div>
 
-    <div class="card">
-        <div class="header red" onclick="show3()"> CSS </div>
-        <div id="dropTag3"></div>
-        <div class="innerCard"></div>
-    </div>
+        <div class="card">
+            <div class="header blue" onclick="show2()"> HTML </div>
+            <div id="dropTag2"></div>
+            <div class="innerCard"></div>
+        </div>
 
-    <div class="card">
-        <div class="header yellow" onclick="show4()"> JavaScript </div>
-        <div id="dropTag4"></div>
-        <div class="innerCard"></div>
-    </div>
+        <div class="card">
+            <div class="header red" onclick="show3()"> CSS </div>
+            <div id="dropTag3"></div>
+            <div class="innerCard"></div>
+        </div>
 
-    <div class="card">
-        <div class="header dark" onclick="show5()"> Hode, kropp og ben </div>
-        <div>
-            <div id="dropTag5"></div>
-            <div id="dropTag6"></div>
-            <div id="dropTag7"></div>
+        <div class="card">
+            <div class="header yellow" onclick="show4()"> JavaScript </div>
+            <div id="dropTag4"></div>
+            <div class="innerCard"></div>
+        </div>
+
+        <div class="card">
+            <div class="header dark" onclick="show5()"> Hode, kropp og ben </div>
+            <div>
+                <div id="dropTag5"></div>
+                <div id="dropTag6"></div>
+                <div id="dropTag7"></div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
